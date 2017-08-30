@@ -1,0 +1,179 @@
+body {
+	margin: 0;
+	background-color: #f2f2f2;
+	padding: 0 2.5%;
+	font-family: "Neucha", "Helvetica Neue", sans-serif;
+	text-align: center;
+}
+
+header {
+	color: #333;
+	border-bottom: 10px solid #fff;
+	margin-bottom: 25px;
+	font-size: 1.2em;
+}
+
+#wrapper {
+	border-right: 10px solid #fff;
+	border-left: 10px solid #fff;
+	overflow: auto;
+	margin: 0 auto;
+	max-width: 1200px;
+	padding-bottom: 40px;
+}
+
+.warm div, .cool div {
+	border-radius: 10px;
+	margin: 0 2%;
+	transition: all .3s ease;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+}
+
+.warm div p, .cool div p {
+	display: none;
+	font-size: .8em;
+	text-transform: lowercase;
+	margin-top: 40px;
+}
+
+
+/***********************************
+
+WARM COLORS
+
+***********************************/
+
+.warm {
+	margin-bottom: 30px;
+}
+
+.warm div:first-child {
+	width: 52%;
+	height: 240px;
+	background-color: #E89515;
+	float: left;
+}
+
+.warm div:nth-of-type(2) {
+	width: 40%;
+	height: 240px;
+	background-color: #FFBF17;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.warm div:nth-of-type(3) {
+	width: 12%;
+	height: 100px;
+	background-color: #E84F14;
+	clear: both;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.warm div:nth-of-type(4) {
+	width: 80%;
+	height: 100px;
+	background-color: #FF8624;
+	float: left;
+}
+
+.warm div:nth-of-type(5) {
+	width: 96%;
+	height: 100px;
+	background-color: #E91A01;
+	clear: both;
+}
+
+
+/***********************************
+
+COOL COLORS
+
+***********************************/
+
+
+.cool div:nth-child(-n+3) {
+	width: 29.3333%;
+	height: 100px;
+	margin-bottom: 10px;
+}
+
+.cool div:nth-child(1) {
+	background-color: #4755E8;
+	float: left;
+}
+
+.cool div:nth-child(2) {
+	background-color: #5B84FF;
+	float: left;
+}
+
+.cool div:nth-child(3) {
+	background-color: #46E8B9;
+	float: left;
+}
+
+.cool div:nth-child(4) {
+	background-color: #758AFF;
+	float: left;
+	clear: both;
+	width: 75%;
+	height: 300px;
+}
+
+.cool div:nth-child(5) {
+	background-color: #3850FF;
+	width: 17%;
+	height: 300px;
+	float: right;
+}
+
+.cool div:nth-last-child(2) {
+	background-color: #24E8B6;
+	width: 25%;
+	height: 120px;
+	float: left;
+	clear: both;
+	margin-top: 20px;
+}
+
+.cool div:last-child {
+	background-color: #9077FF;
+	height: 120px;
+	width: 67%;
+	float: right;
+	margin-top: 20px;
+}
+
+
+
+.warm div:hover, .cool div:hover {
+	opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.warm div:hover p, .cool div:hover p {
+	display: inline-block;
+}
+
+
+@media (min-width: 600px) {
+	.warm div p, .cool div p {
+		font-size: 1.2em;
+	}
+}
+
+@media (min-width: 850px) {
+	.warm div p, .cool div p {
+		font-size: 2em;
+		margin-top: 30px;
+	}
+}
+
+
+
+
+
